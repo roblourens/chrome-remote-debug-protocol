@@ -4,7 +4,9 @@
         "noImplicitAny": true,
         "removeComments": false,
         "target": "ES6",
-        "outDir": "../out",
-        "moduleResolution": "node"
+        "outDir": "../lib",
+        "moduleResolution": "node",
+        "inlineSourceMap": true,
+        "declaration": true
     }
 }

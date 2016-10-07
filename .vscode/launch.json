@@ -2,6 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch generate",
+            "type": "node2",
+            "request": "launch",
+            "program": "${workspaceRoot}/lib/main.js",
+            // "diagnosticLogging": true,
+            "sourceMaps": true,
+            "outFiles": [
+                "${workspaceRoot}/lib/*.js"
+            ]
+        },
+        {
             "name": "Attach",
             "type": "node",
             "request": "attach",

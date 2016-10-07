@@ -1,6 +1,3 @@
-// Auto-generated from https://chromium.googlesource.com/v8/v8.git/+/master/src/inspector/js_protocol.json
-import {IProtocol} from '../protocol'
-export const protocol: IProtocol =
 {
     "version": { "major": "1", "minor": "2" },
     "domains": [
