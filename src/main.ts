@@ -39,7 +39,7 @@ const fetchProtocolJson = async (url: string): Promise<string> => {
 }
 
 export type ProtocolType = 'js'|'browser'|'all';
-export const downloadAndGenerate = async (version: string, destFilePath: string, type: ProtocolType) => {
+export const downloadAndGenerate = async (destFilePath: string, version = 'master', type: ProtocolType = 'all'): Promise<void> => {
     const moduleName = path.basename(destFilePath, ".d.ts")
     const { jsProtocol, browserProtocol } = await download(version)
     const selectedDomains =
